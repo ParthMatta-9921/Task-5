@@ -1,0 +1,23 @@
+Protocols identified:
+
+DNS: port 53
+when i pinged microsoft.com it sent a datagram with dns as protocol to get the ip address of the site.
+from Frame 101 to 104
+also from 151 to 315 for when i went to github.com on the browser.
+
+
+ICMPv6: no port as a 3rd layer protocol
+after getting address from DNS server for the site microsoft.com, the source sends a packet with icmpv6 as protocol
+for a ping to the site.
+from 105 to 114.
+
+
+TCP: 4th layer protocol so no actual port assigned
+
+used for trasnporting the packets in a secured manner. used for important and tme insensitive packets.
+packets get arranged when reaches dest if not in sequence by this protocol.
+from 49 to 54 and other such cases.
+uses tlsv1.3 for security .
+used here in such a manner when viewing the github.com website. 153 to 234 for a first case of seeing the protocol being used.
+it has the destination port 443 so from source to destination server this is going then back from server to source with
+the application data(html).
